@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>回到顶部</title>
+	<style type="text/css">
+	#backTop{width:56px;height:56px;background:url(backTop.png) no-repeat 0px 0px;display:none;position:fixed;right:7%;bottom:30px;
+	}
+	#backTop:hover{background:url(backTop.png) no-repeat -64px 0px;}
+	.div{width: 400px;height: 1500px;margin: 0 auto;border: 1px solid #000;}
+	</style>
+</head>
+<body>
+	<div class="div"></div>
+	<a href="javascript:;" id="backTop"></a>
+
+		<script type="text/javascript">
+		window.onload = function(){
+			var backTop_button = document.getElementById("backTop");	
+			var timer = null;   //定时器
+			var isTop = true;   //滚动条是否到顶
+			
+			//获取页面可视区的高度
+			var clientHeight = document.documentElement.clientHeight;
+			console.log(clientHeight);
+			window.onscroll = function(){
+				var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+				console.log(osTop);
+				if(osTop >= clientHeight)
+				{
+					backTop_button.style.display = 'block';
+				}
+				else
+				{
+					backTop_button.style.display = 'none';
+				}
+				
+				if(!isTop)
+				{
+					clearInterval(timer);
+				}
+				isTop = false;
+			}
+			
+			backTop_button.onclick = function(){
+				timer = setInterval(function(){
+					var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+					var speed = Math.floor(-osTop/5);
+					isTop = true;  
+					console.log(osTop - speed);
+					document.documentElement.scrollTop = document.body.scrollTop = osTop + speed;
+					
+					if(osTop == 0)
+					{
+						clearInterval(timer);
+					}
+					
+				},30);
+			}	
+		}
+	</script>
+</body>
+</html>

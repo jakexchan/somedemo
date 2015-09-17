@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>截取URL</title>
+
+	<script type="text/javascript">
+
+		window.onload = function(){
+			var oUrlBtn = document.getElementById("url_btn");
+			oUrlBtn.addEventListener("click",function(){
+				var oUrlText = document.getElementById("url_text");
+
+				var jsonText = queryString(oUrlText.value);
+				var oP = document.createElement("p");
+				var oText = document.createTextNode("生成JSON字符串:"+jsonText);
+				oP.appendChild(oText);
+				document.body.appendChild(oP);
+
+			},false)
+
+
+			function queryString(str){
+				var arr = str.slice(str.indexOf("?")+1);
+				var jsonText = "{";
+				if(arr.indexOf("&") == -1)
+				{
+					jsonText += "\""+ arr.split("=")[0] + "\":" + "\""+ arr.split("=")[1] + "\"}" ;	
+				}
+				else{
+					arr = str.slice(str.indexOf("?")+1).split("&");
+					for(var i = 0; i < arr.length; i++)
+					{
+						if(i == arr.length - 1)
+						{
+							console.log(i);
+							jsonText += "\""+ arr[i].split("=")[0] + "\":" + "\""+ arr[i].split("=")[1] + "\"}" ;
+						}
+						else
+						{
+							jsonText += "\""+ arr[i].split("=")[0] + "\":" + "\""+ arr[i].split("=")[1] + "\"," ;
+						}
+					}
+				}
+				return jsonText;
+			}
+		}
+		
+
+
+
+	</script>
+</head>
+<body>
+	<input type="text" id="url_text" placeholder="输入URL"/>
+	<input type="button" id="url_btn" value="点击" />&nbsp;例：http://www.xxxxxx.com?key=value,多个值由&隔开
+	
+</body>
+</html>
