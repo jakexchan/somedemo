@@ -1,0 +1,17 @@
+body,div,img,p,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+.blank{width: 100%;height: 900px;background-image: url("image/pb_1.jpg");}
+.page{width: 100%;height: 900px;position: relative;overflow: hidden;}
+.page1{background-image: url("image/p3_bg.jpg");}
+.page2{background-image: url("image/p4_bg.jpg");}
+.page3{background-image: url("image/p5_bg.jpg");}
+h1{text-indent: 10%;}
+img{visibility: inherit;}
+/*.info,.photo_pic{-webkit-opacity: 0;
+-moz-opacity: 0;
+-ms-opacity: 0;
+-o-opacity: 0;
+opacity: 0;}*/
+.page1 .info,.page3 .info{position: absolute;top: 50%;margin-top: -79px;left: 0;}
+.page1 .photo_pic,.page3 .photo_pic{position: absolute;top: 50%;margin-top: -246px;right: 12%;opacity: 1;}
+.page2 .info{position: absolute;top: 50%;margin-top: -246px;left: 12%;}
+.page2 .photo_pic{position: absolute;top: 50%;margin-top: -79px;right: 0;}
