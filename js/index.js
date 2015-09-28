@@ -6,19 +6,19 @@ window.onload = function(){
 
 		oA[i].onclick = function(){
 			
-			clearInterval(timer);
+			clearInterval(this.timer);
 			var dlH = parseInt(getDlHeight(this)) + 20 + 40;
 			var oLi = this.parentNode.parentNode;
 			var speed = 3;	
 			var liH = parseInt(oLi.style.height);	
 			if(liH > 40)
 			{
-				timer = setInterval(function(){
+				this.timer = setInterval(function(){
 					console.log(parseInt(oLi.style.height));
 					if(parseInt(oLi.style.height) < 50)
 					{
 						oLi.style.height = 40 + "px";
-						clearInterval(timer);
+						clearInterval(this.timer);
 					}
 					else
 					{
@@ -29,11 +29,11 @@ window.onload = function(){
 				},30);
 			}
 			else{
-				timer = setInterval(function(){
+				this.timer = setInterval(function(){
 					console.log(parseInt(oLi.style.height));
 					if(parseInt(oLi.style.height) > dlH)
 					{
-						clearInterval(timer);
+						clearInterval(this.timer);
 					}
 					else
 					{
