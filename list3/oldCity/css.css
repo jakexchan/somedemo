@@ -1,0 +1,160 @@
+body,div,h1,h2,h3,h4,ul,li,img,p,input,span{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+.clear{
+	overflow: hidden;
+}
+.header{
+	width: 100%;
+	height: 95px;
+	background-color: #101010;
+	color: #fff;
+	position: relative;
+}
+.header a{
+	color: #fff;
+}
+.header .header-top a,span{
+	display: inline-block;
+	font-size: 12px;
+	padding-left: 9px;
+	padding-right: 9px;
+	height: 24px;
+	line-height: 24px;
+	margin-top: 11px;
+}
+.header .header-top{
+	position: absolute;
+	left: 60%;
+}
+
+.header .seach{
+	display: inline-block;
+	width: 180px;
+	width: 24px;
+	position: relative;
+}
+.header .seach_text{
+	display: inline-block;
+	width: 156px;
+	height: 24px;
+	border: none;
+}
+
+.header #seachbtn{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border: none;
+	background: url("seach.png") no-repeat 0 0;
+	cursor: pointer;
+	margin-left: 0;
+	position: absolute;
+	left: 156px;
+	top: 0;
+}
+
+.header ul{
+	font-size: 16px;
+	padding-top:56px;
+	margin-left: 50%;
+}
+.header ul li{
+	float: left;
+}
+.header ul li a{
+	margin-left: 40px;
+
+}
+
+.container{
+	width: 1025px;
+	height: auto;
+	margin: 14px  auto;
+}
+
+.hotActivity img{
+	float: left;
+}
+.container h2{
+	font-size: 18px;
+	padding: 18px 22px;
+}
+
+.activity{
+	width: 234px;
+	float: left;
+	margin-left: 22px;
+}
+
+.holdActivity{
+	width: 234px;
+	height: 100px;
+	background-color: #e9205b;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+}
+
+.activity span{
+	font-size: 16px;
+	margin-top:28px;
+	margin-left: 8px;
+}
+
+.activity ul{
+	margin-top: 23px;
+	margin-left: 16px;
+}
+
+.activity ul li{
+	margin-bottom: 20px;
+}
+
+.newActivity{
+	width: 100%;
+	margin-top: 47px;
+}
+
+.activityInfo{
+	float: left;
+	width: 320px;
+	height: 390px;
+	margin-right: 21px;
+}
+.activityInfo a{
+	font-size: 14px;
+	color: #000;
+	top: 20px;
+	padding-left: 22px;
+}
+
+.activityInfo p .info{
+	padding-left: 62px;
+	font-size: 14px;
+}
+
+.activityInfo .info span{
+	font-size: 14px;
+	color: red;
+}
+
+.foot{
+	width: 100%;
+	height: 58px;
+	background-color: #000;
+	margin-top: 119px;
+	text-align: center;
+	line-height: 58px;
+	color: #fff;
+	font-size: 16px;
+}
+
+

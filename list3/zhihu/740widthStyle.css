@@ -1,0 +1,44 @@
+*{margin: 0;padding: 0}
+body{
+	font-size: 1em;
+}
+a{text-decoration: none;}
+ul{list-style: none;}
+.clear{clear: both;}
+.topWrapper{width: 100%;background-color: #0078d8;}
+.container{width: 740px;margin: 0 auto;position: relative;overflow: hidden;}
+.webTitle{height: 148px;position:absolute;top:50%;margin-top:-74px;color: #fff;}
+.webTitle h1{font-size: 4.375em;}
+.webTitle p{font-size: 1.26em;font-weight: bold;line-height: 3.375em;}
+.formContainer{float:right;margin-right: 3.97022%;width: 202px;padding-top: 40px; color: #fff;}
+.formContainer .title{font-size: 1em;color: #fff;width: 202px;}
+.title a{color: #fff;float: right;}
+.title a:hover{margin-right: -5px;}
+.formContainer form{width: 202px;margin-top: 22px;}
+.formContainer form span{font-size: .875em;}
+.formContainer form .formInput{width: 202px;border-radius: 7px;height: 32px;border: none;outline: none;text-indent: 12px;}
+.textInput{background-color: #e7f1f8;margin-bottom: 20px;}
+.checkKey{padding-bottom: 16px;}
+.checkKey img{max-width: 60%;}
+.btnInput{background-color: #80c3f7;cursor: pointer;text-align: center;color: #fff;text-align: -12px;width: 202px;border-radius: 5px;height: 32px;border: none;font-size: .875em;margin-bottom: 20px;}
+.problem{color: #fff;font-size: .875em;float: right;}
+.linkLogin{padding:24px 0 54px 0;}
+
+
+.bottomWrapper{width: 100%;background-image: url("./image/bg.png");padding: 50px 0;}
+.userContainer{width:740px;margin: 0 auto;overflow: hidden;}
+.faceDiv{width: 210px;float: left;}
+.faceDiv a{display: inline-block; width: 60px;height: 60px;background-color: #fff; border-radius: 50%;position: relative;margin-bottom: 10px;}
+.faceDiv a img{display: block;width:50px;height:50px;border-radius: 50%;position: absolute;left: 50%;top: 50%;margin-left: -25px;margin-top: -25px;transition:all .3s;}
+.faceDiv a img:hover{width:60px;height:60px;left: 50%;top: 50%;margin-left: -30px;margin-top: -30px}
+.detailDiv{float:left;width:440px;background-color: #fff;border-radius: 8px;padding: 30px; color: #b0c5d6;font-size: 1em;position: relative;}
+.detailDiv a{color: #b0c5d6}
+.detailDiv a:hover{text-decoration:underline;}
+.detailDiv img{display: block;width: 45px;height: 45px;border-radius: 50%;position: absolute;top: 26px;left: 30px;}
+.ref{margin:18px 0;border: 1px solid #f3f5f7}
+.userInfo{height: 50px;padding-left: 60px;}
+.answer{margin-top: 10px;}
+.listBlank{margin-top: 12px;}
+.content ul li{height: auto;overflow: hidden;}
+.content ul li span{display: inline-block;height: 24px;width: 38px;background-color: #b0c5d6;border-radius: 5px;color: #fff;text-align: center;}
+.content ul li a{display: block;width: 382px;float: right;}
